@@ -1,0 +1,22 @@
+p{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px;
+    box-shadow: 10px 10px 10px 10px aqua;
+}
+
+h5, ul{
+    color: red;
+    text-align: center;
+}
+h5{
+    margin-top: 50px;
+}
+img{
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}

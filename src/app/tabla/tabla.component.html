@@ -1,0 +1,24 @@
+
+<div *ngIf="registros.length > 0; else nopersonas">
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Correo</th>
+      <th scope="col">Fecha de Nacimiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let registro of registros">
+      <th scope="row">{{registro.nombre}}</th>
+      <td>{{registro.sexo}}</td>
+      <td>{{registro.correo}}</td>
+      <td>{{registro.fecnac}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<ng-template #nopersonas>
+  <h2 class="text-center">No hay registros por el momento</h2>
+</ng-template>

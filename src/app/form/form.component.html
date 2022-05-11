@@ -1,0 +1,45 @@
+
+        <div class="form-group">
+            <label>Nombre</label>
+            <input id="nombre" type="text" class="form-control" [(ngModel)]="registro.nombre">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Sexo</label>
+            <select id="sexo" class="form-control" id="exampleFormControlSelect1" [(ngModel)]="registro.sexo">
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Correo electrónico</label>
+            <input id="email" type="text" class="form-control" [(ngModel)]="registro.correo">
+        </div>
+        <div class="form-group">
+            <label>Fecha de nacimiento</label>
+            <input type="date" id="fecnac" name="trip-start" value="2022-05-03" min="1900-01-01" max="2022-05-03" [(ngModel)]="registro.fecnac">
+        </div>
+        <button (click)="this.nuevoRegistro()">Guardar</button>
+
+        
+<!-- <h2>Introduzca sus datos</h2>
+<p>
+  <span>Nombre:</span>
+  <input type="text" [(ngModel)]="cliente.nombre">
+</p>
+<p>
+  <span>Sexo:</span>
+  <input type="text" [(ngModel)]="cliente.cif">
+</p>
+<p>
+  <span>Correo electrónico:</span>
+  <input type="text" [(ngModel)]="cliente.direccion">
+</p>
+<p>
+  <span>Fecha de nacimiento:</span>
+  <select [(ngModel)]="cliente.grupo">
+    <option *ngFor="let grupo of grupos" value="{{grupo.id}}">{{grupo.nombre}}</option>
+  </select>
+</p>
+<p>
+  <button (click)="this.nuevoCliente()">Guardar</button>
+</p> -->
